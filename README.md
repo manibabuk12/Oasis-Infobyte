@@ -23,30 +23,6 @@ To run this ATM application, follow these steps:
 
 Creating a README file for your GitHub project is a great way to provide documentation and instructions for users and contributors. Below is an example README file for your ATM project:
 
-markdown
-Copy code
-# Simple ATM Console Application
-
-This is a simple console-based ATM (Automated Teller Machine) application built in Java. The application provides basic ATM functionalities such as viewing balance, depositing, withdrawing, and transferring funds.
-
-## Features
-
-- User authentication using a user ID and PIN.
-- View account balance.
-- Deposit funds into the account.
-- Withdraw funds from the account.
-- Transfer funds to another user.
-
-## Getting Started
-
-To run this ATM application, follow these steps:
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/yourusername/atm-console-app.git
-Navigate to the project directory:
-
 **1.Navigate to the project directory:**
 cd atm-console-app
 
