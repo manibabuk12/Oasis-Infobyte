@@ -17,11 +17,7 @@ To run this ATM application, follow these steps:
 
 1. Clone this repository to your local machine:
 
-   ```bash
    git clone https://github.com/manibabuk12/atm-console-app.git
-
-
-Creating a README file for your GitHub project is a great way to provide documentation and instructions for users and contributors. Below is an example README file for your ATM project:
 
 **1.Navigate to the project directory:**
 cd atm-console-app
@@ -58,7 +54,8 @@ This is a simple Java-based "Guess the Number" game that allows the user to gues
 
 ## Usage
 1. Clone the repository to your local machine using the following command:
-git clone https://github.com/manibabuk12/guess-the-number-game.git
+ 
+ git clone https://github.com/manibabuk12/guess-the-number-game.git
 
 2. Compile the Java code:
 javac GuessTheNumberGame.java
