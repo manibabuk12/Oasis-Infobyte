@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Transaction {
+public class Transaction<TransactionType> {
     private TransactionType type;
     private double amount;
     private LocalDateTime timestamp;
