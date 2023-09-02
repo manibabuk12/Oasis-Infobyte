@@ -1,37 +1,37 @@
 import java.util.Random;
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
-public class GuessTheNumberGame {
+public class GuessTheNumber {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
         int lowerBound = 1;
         int upperBound = 100;
-        int maxAttempts = 10;
-        int score = 0;
+        int numberToGuess = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        int numberOfTries = 0;
+        boolean hasGuessedCorrectly = false;
 
-        Random random = new Random();
-        int randomNumber = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        System.out.println("Welcome to the Guess the Number game!");
+        System.out.println("I'm thinking of a number between " + lowerBound + " and " + upperBound + ".");
 
-        JOptionPane.showMessageDialog(null, "Welcome to Guess the Number Game!");
+        while (!hasGuessedCorrectly) {
+            System.out.print("Enter your guess: ");
+            int userGuess = scanner.nextInt();
+            numberOfTries++;
 
-        for (int attempts = 1; attempts <= maxAttempts; attempts++) {
-            String guessStr = JOptionPane.showInputDialog("Attempt " + attempts + "/" + maxAttempts +
-                    "\nEnter your guess between " + lowerBound + " and " + upperBound + ":");
-            int userGuess = Integer.parseInt(guessStr);
-
-            if (userGuess == randomNumber) {
-                score += (maxAttempts - attempts + 1);
-                JOptionPane.showMessageDialog(null, "Congratulations! You guessed the number " +
-                        randomNumber + " in " + attempts + " attempts.\nYour current score: " + score);
-                break;
-            } else if (userGuess < randomNumber) {
-                JOptionPane.showMessageDialog(null, "Try again! Your guess is too low.");
+            if (userGuess < lowerBound || userGuess > upperBound) {
+                System.out.println("Please guess within the range of " + lowerBound + " and " + upperBound + ".");
+            } else if (userGuess < numberToGuess) {
+                System.out.println("Try a higher number.");
+            } else if (userGuess > numberToGuess) {
+                System.out.println("Try a lower number.");
             } else {
-                JOptionPane.showMessageDialog(null, "Try again! Your guess is too high.");
-            }
-
-            if (attempts == maxAttempts) {
-                JOptionPane.showMessageDialog(null, "Sorry, you've reached the maximum number of attempts. The number was: " + randomNumber);
+                System.out.println("Congratulations! You've guessed the number " + numberToGuess + " in " + numberOfTries + " tries.");
+                hasGuessedCorrectly = true;
             }
         }
+
+        scanner.close();
     }
 }
