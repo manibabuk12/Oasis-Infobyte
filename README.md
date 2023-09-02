@@ -46,30 +46,27 @@ Contributions are welcome! If you find any issues or have ideas for improvements
 This is a simple Java-based "Guess the Number" game that allows the user to guess a randomly generated number within a specified range. The game provides feedback on whether the guess is too high or too low and tracks the user's score based on the number of attempts.
 
 ## Features
-- Randomly generates a number within a specified range.
-- Allows the user to input their guesses.
-- Provides feedback on whether the guess is correct, too high, or too low.
-- Limits the number of attempts.
-- Keeps track of the user's score based on the number of attempts.
 
-## Usage
-1. Clone the repository to your local machine using the following command:
- 
- git clone https://github.com/manibabuk12/guess-the-number-game.git
+- Generates a random number within a specified range.
+- Provides feedback to the player based on their guesses (higher, lower, or correct).
+- Keeps track of the number of tries.
+- Displays a congratulatory message upon a correct guess.
 
-2. Compile the Java code:
-javac GuessTheNumberGame.java
+## Getting Started
 
-3. Run the game:
-java GuessTheNumberGame
+Follow these instructions to get the game up and running on your local machine.
 
-4. Follow the below instructions to play the game.
+### Prerequisites
+
+- Java Development Kit (JDK) installed
+- A Java development environment (IDE or text editor)
+- Git (optional)
 
 ## Configuration
 You can customize the game by modifying the following variables in the `GuessTheNumberGame.java` file:
 - `lowerBound`: The lower bound of the random number range.
 - `upperBound`: The upper bound of the random number range.
-- `maxAttempts`: The maximum number of attempts allowed.
+
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
