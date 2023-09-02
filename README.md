@@ -62,6 +62,14 @@ Follow these instructions to get the game up and running on your local machine.
 - A Java development environment (IDE or text editor)
 - Git (optional)
 
+## How to Play
+1.Run the program in your Java development environment.
+2.The program will generate a random number between a specified lower and upper bound.
+3.You will be prompted to enter your guess.
+4.Keep guessing until you correctly guess the generated number.
+5.The program will provide feedback (higher, lower, or correct) after each guess.
+6.Once you guess the number correctly, the program will display the number of tries it took.
+
 ## Configuration
 You can customize the game by modifying the following variables in the `GuessTheNumberGame.java` file:
 - `lowerBound`: The lower bound of the random number range.
